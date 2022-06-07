@@ -1,0 +1,43 @@
+.pakemon-love-img {
+  margin-left: 300px;
+}
+
+.pakemon-link {
+  padding-left: 200px;
+}
+
+.pakemon-item-gross::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/chevron-down.png);
+  position: relative;
+  top: 4px;
+}
+
+.pakemon-item-search::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/search.png);
+  position: relative;
+  top: 4px;
+}
+
+.pakemon-item-aa-zz::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/chevron-down.png);
+  position: relative;
+  top: 4px;
+}
+
+
+.pakemon-item {
+  max-width: 300px;
+  width: 100%;
+}
