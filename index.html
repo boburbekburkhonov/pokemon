@@ -7,45 +7,58 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
+  <link rel="shortcut icon" href="./images/pokemon.png" type="image/x-icon">
+  <title>Pokemon</title>
 </head>
-<body class="bg-warning d-flex flex-column justify-content-center align-items-center">
-  <!-- HEADER -->
-  <header class="pt-5">
-    <div class="container">
-      <div>
-        <a class="pakemon-link text-decoration-none" href="#">
-          <img class="mb-5" src="./images/pokemon-logo.svg" alt="pakemon" width="610" height="225">
-        </a>
+<body>
 
-        <img class="pakemon-love-img" src="./images/heart.png" alt="love" width="50" height="50">
+  <div class="loader">
+    <h1>Sorry, you have to wait a little longer ...</h1>
+    <div class="ring"></div>
+  </div>
+
+  <div class="animate-background w-100 d-flex flex-column justify-content-center align-items-center">
+      <!-- HEADER -->
+    <header class="pt-5">
+
+      <div class="container">
+        <div>
+          <a class="pakemon-link text-decoration-none" href="#">
+            <img class="mb-5" src="./images/pokemon-logo.svg" alt="pakemon" width="610" height="225">
+          </a>
+
+          <img class="pakemon-love-img" src="./images/heart.png" alt="love" width="50" height="50">
+        </div>
+
+        <!-- LIST -->
+        <ul class="pakemon-list list-unstyled d-flex m-0 p-0 justify-content-between">
+          <li class="pakemon-item pakemon-item-gross h3 border border-dark bg-light text-dark text-center rounded ms-5">
+            Gross
+          </li>
+
+          <li class="pakemon-item pakemon-item-search h3 border border-dark bg-light text-dark text-center rounded ms-4">
+            Search
+          </li>
+
+          <li class="pakemon-item pakemon-item-aa-zz h3 border border-dark bg-light text-dark text-center rounded ms-5">
+            Aa-Zz
+          </li>
+
+          <li class="pakemon-item ms-5">
+            <button class="pakemon-item-btn h3 border border-dark bg-light text-dark text-center rounded">Button</button>
+          </li>
+        </ul>
+
       </div>
-      <!-- LIST -->
-      <ul class="pakemon-list list-unstyled d-flex m-0 p-0 justify-content-between">
-        <li class="pakemon-item pakemon-item-gross h3 border border-dark bg-light text-dark text-center rounded ms-5">
-          Gross
-        </li>
+    </header>
 
-        <li class="pakemon-item pakemon-item-search h3 border border-dark bg-light text-dark text-center rounded ms-4">
-          Search
-        </li>
-
-        <li class="pakemon-item pakemon-item-aa-zz h3 border border-dark bg-light text-dark text-center rounded ms-5">
-          Aa-Zz
-        </li>
-
-        <li class="pakemon-item ms-5">
-          <button class="pakemon-item-btn h3 border border-dark bg-light text-dark text-center rounded">Button</button>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <!-- MAIN -->
-  <main>
-    <div class="container">
-      <ul class="list d-flex flex-wrap justify-content-between"></ul>
-    </div>
-  </main>
+    <!-- MAIN -->
+    <main>
+      <div class="container">
+        <ul class="list d-flex flex-wrap justify-content-between"></ul>
+      </div>
+    </main>
+  </div>
 
   <script src="./js/pokemons.js"></script>
   <script src="./js/apps.js"></script>
